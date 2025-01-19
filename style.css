@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", serif;
+}
+/* Class Chung */
+a {
+  text-decoration: none;
+}
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 60px);
+  margin-right: auto;
+  margin-left: auto;
+}
+.btn {
+  display: inline-block;
+  min-width: 118px;
+  padding: 16px;
+  background: black;
+  color: white;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 25px;
+  border-radius: 999px;
+  text-align: center;
+}
+.btn:hover {
+  opacity: 0.7;
+}
+/* Class Rieng */
+.header.fixed {
+  z-index: 1;
+  position: sticky;
+  top: -28px;
+}
+.header {
+  background: rgba(255, 252, 244, 1);
+}
+.header .headerbody {
+  display: flex;
+  align-items: center;
+  padding: 36px 0 6px;
+}
+nav {
+  margin-left: auto;
+}
+.nav ul {
+  display: flex;
+}
+.nav a {
+  position: relative;
+  color: rgba(95, 91, 83, 1);
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 8px 21px;
+}
+.nav li.active a,
+.nav a:hover {
+  color: rgba(23, 17, 0, 1);
+  text-shadow: 1px 0px 0px currentColor;
+}
+.nav li.active a::after {
+  position: absolute;
+  left: 21px;
+  bottom: 6%;
+  display: block;
+  content: "";
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background: rgba(23, 17, 0, 1);
+}
+.header .btnSU {
+  min-width: 144px;
+}
+.header .action {
+  margin-left: 49px;
+}
+/* Code phan Hero */
+.hero {
+  padding: 56px 0 65px;
+  background: rgba(255, 252, 244, 1);
+}
+.hero .bodyhero {
+  display: flex;
+}
+/* hero left */
+.hero .media-block {
+  width: 48%;
+  position: relative;
+}
+
+.hero .media-block .img {
+  width: 470px;
+  height: 685px;
+  object-fit: cover;
+}
+.hero .media-block .hero-sumbody {
+  position: absolute;
+  right: 0;
+  bottom: 48px;
+  background: rgba(255, 255, 255, 1);
+  width: 270px;
+  height: 260px;
+  border-radius: 12px;
+  padding: 24px;
+}
+.hero-sumbody .item {
+  display: flex;
+  align-items: center;
+}
+.hero-sumbody .item + .item {
+  margin-top: 24px;
+}
+.hero-sumbody .icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 249, 232, 1);
+}
+.hero-sumbody .icon2 {
+  background-color: rgba(252, 239, 255, 1);
+}
+.hero-sumbody .icon3 {
+  background-color: rgba(235, 234, 255, 1);
+}
+.hero-sumbody .info {
+  margin-left: 16px;
+}
+.hero-sumbody .label {
+  width: 79px;
+  height: 26px;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  color: rgba(95, 91, 83, 1);
+}
+.hero-sumbody .title {
+  width: 124px;
+  height: 30px;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: rgba(23, 17, 0, 1);
+}
+/* hero right */
+.hero .content-block {
+  width: 52%;
+  padding-left: 130px;
+  padding-top: 64px;
+}
+.hero .heading {
+  font-family: Sen;
+  font-size: 5.8rem;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: rgba(23, 17, 0, 1);
+}
+.hero .decs {
+  margin-top: 22px;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: rgba(95, 91, 83, 1);
+}
+.hero .cta-group {
+  margin-top: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero .btn {
+  min-width: 180px;
+  line-height: 30px;
+  border-radius: 32px;
+  background: rgba(255, 185, 0, 1);
+  font-family: Poppins;
+}
+.hero .watch-video {
+  border: none;
+  background: transparent;
+  display: flex;
+  margin-left: 28px;
+  cursor: pointer;
+  /* align-items: center; */
+}
+.hero .watch-video .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background: #fff;
+  /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.07); */
+}
+.hero .watch-video span {
+  margin-left: 14px;
+  font-family: Poppins;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+}
+.hero .decs1 {
+  margin-top: 48px;
+}
+.hero .decs2 {
+  color: rgba(23, 17, 0, 1);
+  margin-top: 8px;
+}
+.hero .decs2 strong {
+  margin-right: 15px;
+  font-family: Sen;
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 1.23;
+}
+.hero .decs2 strong:nth-child(2) {
+  margin-left: 28px;
+}
